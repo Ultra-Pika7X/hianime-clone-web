@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# HiAnime Clone - Web Version
 
-## Getting Started
+A modern, ad-free anime streaming application built with **Next.js 15**, **TailwindCSS**, and **TypeScript**.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+-   **High-Quality Streaming**: Powered by **VidSrc** (Embeds) with automatic quality selection.
+-   **Ad-Block System**: Custom sandboxed iframe implementation to block intrusive pop-ups and redirects.
+-   **Anilist Integration**:
+    -   Authentic metadata (Titles, Images, Descriptions) via Anilist API.
+    -   **User Authentication**: Log in with your Anilist account.
+    -   **Sync**: Automatically tracks your watch progress ("Current" list) and episode count.
+-   **Continue Watching**: "Jump back in" row on the home page tracking your local and cloud history.
+-   **Modern UI**: Responsive design with `framer-motion` animations and `lucide-react` icons.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+-   **Framework**: Next.js 15 (App Router)
+-   **Styling**: TailwindCSS
+-   **State Management**: React Context + IndexedDB (Local History)
+-   **Auth**: Firebase Auth (Structure ported) + Anilist OAuth
+-   **Icons**: Lucide React & React Icons
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ⚡ Getting Started
 
-## Learn More
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/Ultra-Pika7X/hianime-clone-web.git
+    cd hianime-clone-web
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3.  **Run the development server**:
+    ```bash
+    npm run dev
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4.  Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Deploy on Vercel
+## 📦 Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is optimized for **Vercel**.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1.  Push your code to a GitHub repository.
+2.  Import the project in [Vercel](https://vercel.com).
+3.  Deploy! (No complex environment variables required for basic functionality).
+
+## 📝 License
+
+This project is for educational purposes only. Content is scraped/embedded from third-party sources. Use at your own risk.
