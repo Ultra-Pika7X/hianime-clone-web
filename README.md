@@ -49,6 +49,9 @@ This project is optimized for **Vercel**.
 2.  Import the project in [Vercel](https://vercel.com).
 3.  Deploy! (No complex environment variables required for basic functionality).
 
+
 ## 📝 License
 
 This project is for educational purposes only. Content is scraped/embedded from third-party sources. Use at your own risk.
+
+> Last Updated: Jan 2026
