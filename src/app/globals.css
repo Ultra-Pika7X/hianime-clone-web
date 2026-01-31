@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #201f31;
+  --foreground: #ffffff;
+  --primary: #ffbade;
+  --primary-hover: #ff9ecd;
+  --surface: #2a2c31;
+  --subtext: #aaaaaa;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Rubik', sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
