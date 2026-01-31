@@ -20,7 +20,7 @@ export function ContinueWatching() {
                 Continue Watching
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-                {recent.map((item) => (
+                {recent.map((item: any) => (
                     <Link
                         key={item.id}
                         href={`/watch/${item.id}?ep=${item.watchedEpisode || 1}`}
