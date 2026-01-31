@@ -13,6 +13,14 @@ export function ContinueWatching() {
     // Take top 4 recent items
     const recent = history.slice(0, 4);
 
+    interface HistoryItem {
+        id: string;
+        watchedEpisode?: number;
+        image: string;
+        coverImage?: { large: string };
+        title?: { english?: string; romaji?: string };
+    }
+
     return (
         <section className="mt-8">
             <h2 className="text-xl font-bold text-primary mb-4 flex items-center gap-2">
@@ -20,7 +28,7 @@ export function ContinueWatching() {
                 Continue Watching
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-                {recent.map((item: any) => (
+                {recent.map((item: HistoryItem) => (
                     <Link
                         key={item.id}
                         href={`/watch/${item.id}?ep=${item.watchedEpisode || 1}`}
